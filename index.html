@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#09070c">
+<title>Для моей Аруки ❤️</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Marck+Script&family=Montserrat:wght@300;400;500;600;700&display=swap');
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:#08070b;color:#fff;font-family:Montserrat,sans-serif;overflow-x:hidden}
+body:before{content:"";position:fixed;inset:0;z-index:-3;background:
+radial-gradient(circle at 20% 10%,rgba(151,61,112,.28),transparent 30%),
+radial-gradient(circle at 85% 70%,rgba(92,63,139,.18),transparent 32%),
+linear-gradient(145deg,#09070c,#130b15 45%,#08070b)}
+#stars,#stars:before,#stars:after{position:fixed;inset:0;pointer-events:none}
+#stars{z-index:-2}
+#stars:before,#stars:after{content:"";background-image:radial-gradient(#fff 1px,transparent 1px);background-size:90px 90px;opacity:.16;animation:drift 45s linear infinite}
+#stars:after{background-size:150px 150px;opacity:.08;animation-duration:75s}
+@keyframes drift{to{transform:translate(90px,90px)}}
+.progress{position:fixed;top:0;left:0;height:3px;width:0;background:linear-gradient(90deg,#d875ad,#f5dce9);z-index:50}
+section{min-height:100svh;padding:82px 18px;display:flex;align-items:center;justify-content:center;position:relative}
+.card{width:min(980px,100%);text-align:center}
+.glass{background:linear-gradient(145deg,rgba(255,255,255,.09),rgba(255,255,255,.025));border:1px solid rgba(255,255,255,.12);border-radius:30px;padding:42px;box-shadow:0 25px 100px rgba(0,0,0,.38);backdrop-filter:blur(15px)}
+.kicker{letter-spacing:4px;text-transform:uppercase;font-size:10px;color:#dca9ca;margin-bottom:17px}
+h1,h2{font-family:"Marck Script",cursive;font-weight:400}
+h1{font-size:clamp(68px,16vw,140px);margin:0;line-height:.82}
+h2{font-size:clamp(43px,8vw,78px);margin:0 0 24px;line-height:1}
+p{font-size:16px;line-height:1.9;color:#e8dfe7}
+.hero-sub{max-width:650px;margin:32px auto;font-size:17px}
+.heart{font-size:30px;display:inline-block;animation:pulse 1.8s infinite}
+@keyframes pulse{50%{transform:scale(1.2)}}
+.scroll{margin-top:54px;color:#9d909e;font-size:11px;letter-spacing:2px;animation:bounce 2s infinite}
+@keyframes bounce{50%{transform:translateY(8px)}}
+.fade{opacity:0;transform:translateY(34px);transition:1s ease}
+.fade.show{opacity:1;transform:none}
+.timeline{display:grid;gap:15px;text-align:left;margin-top:30px}
+.event{padding:20px 22px;border-left:2px solid #b65b9b;background:rgba(255,255,255,.035);border-radius:0 17px 17px 0}
+.event b{display:block;color:#eab8d9;margin-bottom:6px}
+.quote{font-family:"Marck Script",cursive;font-size:clamp(29px,6vw,53px);line-height:1.25;color:#f5dce9;margin-top:26px}
+.names{font-size:12px;letter-spacing:1px;color:#bdaebb;margin-top:17px}
+.chapter{min-height:100svh}
+.chapter .photo-wrap{width:min(720px,100%);margin:0 auto 28px;position:relative}
+.chapter img{display:block;width:100%;max-height:72svh;object-fit:cover;border-radius:25px;box-shadow:0 25px 80px rgba(0,0,0,.5);border:1px solid rgba(255,255,255,.12)}
+.chapter .caption{max-width:760px;margin:auto}
+.chapter .caption p{margin:10px 0}
+.chapter .caption .lead{font-family:"Marck Script",cursive;color:#f5dce9;font-size:clamp(28px,5vw,45px);line-height:1.25}
+.chapter .num{color:#aa9ba9;font-size:10px;letter-spacing:3px;margin-bottom:10px}
+.chapter.holly .photo-wrap:after{content:"";position:absolute;inset:-8px;border-radius:30px;background:
+radial-gradient(circle at 20% 30%,rgba(255,100,170,.3),transparent 8%),
+radial-gradient(circle at 80% 65%,rgba(80,170,255,.28),transparent 9%);
+mix-blend-mode:screen;pointer-events:none}
+.moments{display:grid;grid-template-columns:repeat(3,1fr);gap:13px}
+.moments img{height:48svh;object-fit:cover}
+.letter{text-align:left}
+.letter p{font-size:16px}
+.signature{text-align:right;font-family:"Marck Script",cursive;font-size:36px;color:#efc4dc;margin-top:30px}
+.final{font-size:19px}
+.big-love{font-family:"Marck Script",cursive;font-size:clamp(48px,10vw,92px);color:#f5dce9;line-height:1}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;margin-top:25px;padding:13px 20px;border:1px solid rgba(255,255,255,.16);border-radius:999px;background:rgba(255,255,255,.06);color:#fff;text-decoration:none;font:500 12px Montserrat;cursor:pointer;transition:.25s}
+.btn:hover{transform:translateY(-2px);background:rgba(255,255,255,.1)}
+.player{position:fixed;left:50%;bottom:17px;transform:translateX(-50%);width:min(520px,calc(100% - 24px));z-index:40;padding:9px 12px;border:1px solid rgba(255,255,255,.14);background:rgba(16,11,19,.78);backdrop-filter:blur(16px);border-radius:19px;display:flex;align-items:center;gap:11px;box-shadow:0 14px 45px #0009}
+.player button{border:0;background:#d875ad;color:#fff;width:42px;height:42px;border-radius:50%;font-size:16px;cursor:pointer;flex:0 0 auto}
+.track{flex:1;text-align:left;min-width:0}
+.track b{font-size:11px}.track small{display:block;color:#a99ca8;margin-top:3px;font-size:9px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+input[type=range]{width:100%;accent-color:#d875ad;height:15px}
+footer{padding:30px 20px 105px;text-align:center;color:#817581;font-size:10px;letter-spacing:1px}
+@media(max-width:650px){
+section{padding:65px 14px}.glass{padding:28px 20px}.hero-sub{font-size:15px}
+.chapter img{max-height:65svh;border-radius:20px}.moments{grid-template-columns:1fr;gap:10px}.moments img{height:auto;max-height:65svh}
+.letter p{font-size:15px}.player{bottom:10px}
+}
+</style>
+</head>
+<body>
+<div id="stars"></div><div class="progress" id="progressBar"></div>
+
+<section id="start">
+<div class="card fade">
+<div class="kicker">bir oilap alam</div>
+<h1>Арука</h1><div class="heart">♥</div>
+<p class="hero-sub">Жаным, я сделал это не просто как сайт.<br>Я хотел оставить здесь то, что иногда не получается сказать словами.</p>
+<button class="btn" id="startMusic">▶ Включить нашу песню</button>
+<div class="scroll">листай вниз ↓</div>
+</div>
+</section>
+
+<section>
+<div class="card glass fade">
+<div class="kicker">с самого начала</div>
+<h2>Случайное сообщение</h2>
+<p>20 июля 2024 года мы познакомились совершенно случайно. Ты написала мне просто от скуки — а я тогда даже представить не мог, что одно обычное сообщение однажды приведёт меня к тебе.</p>
+<p>А потом настал <b>7 мая 2025 года</b> — день, с которого началась уже наша история.</p>
+<div class="quote">«Кейде ең маңызды адамдар өмірімізге кездейсоқ келеді.»</div>
+<div class="names">И, наверное, наше «случайно» было самым красивым совпадением.</div>
+</div>
+</section>
+
+<section>
+<div class="card fade">
+<div class="kicker">наша история</div><h2>Моменты, которые я храню</h2>
+<div class="timeline">
+<div class="event"><b>7 мая 2025</b>Наша дата. Тот самый день, который теперь для меня значит намного больше, чем просто число в календаре.</div>
+<div class="event"><b>Наши встречи</b>Прогулки, поездки в деревни, моменты, когда мы наконец виделись после разлуки. Даже обычный день рядом с тобой становился особенным.</div>
+<div class="event"><b>Наш смех</b>«15 секунд», Анэлю, Алемгуль, «су*ка чтоли?» — вещи, которые для других ничего не значат, а для меня сразу включают воспоминания о тебе.</div>
+<div class="event"><b>Поддержка</b>Мы были друг у друга в разные моменты. И я особенно ценю то, что между нами есть не только любовь, но и настоящее чувство «я рядом».</div>
+</div></div>
+</section>
+
+<section class="chapter">
+<div class="card fade"><div class="num">01 / 09</div><div class="photo-wrap"><img src="photos/01-first-meeting.jpeg" alt="Наша первая встреча"></div>
+<div class="caption"><h2>Наша первая встреча</h2>
+<p>Помнишь, как мы гуляли, стесняясь друг друга? Это неловкое молчание, первое впечатление… Тогда мы ещё не знали, что дойдём так далеко.</p>
+<p class="lead">Это был мой лучший день. Кездераай ❤️</p></div></div>
+</section>
+
+<section class="chapter">
+<div class="card fade"><div class="num">02 / 09</div><div class="photo-wrap"><img src="photos/02-birthday.jpeg" alt="День рождения Аруки"></div>
+<div class="caption"><h2>Твой день рождения</h2>
+<p><b>04.08.2026</b> — тот день был таким насыщенным. Помню твою улыбку, радость в глазах и твои первые цветы от меня.</p>
+<p class="lead">В тот день я был счастлив видеть тебя такой счастливой, жан. ❤️</p></div></div>
+</section>
+
+<section class="chapter">
+<div class="card fade"><div class="num">03 / 09</div><div class="photo-wrap"><img src="photos/03-together.jpeg" alt="Наш обычный счастливый день"></div>
+<div class="caption"><h2>Просто быть рядом</h2>
+<p>Иногда не нужен никакой особенный повод. Можно просто сидеть рядом, что-нибудь есть, разговаривать или молчать — и всё равно чувствовать себя счастливым.</p>
+<p class="lead">С тобой даже обычный день становится воспоминанием. 🥰</p></div></div>
+</section>
+
+<section class="chapter">
+<div class="card fade"><div class="num">04 / 09</div><div class="photo-wrap"><img src="photos/04-postcards.jpeg" alt="Первые открытки и памятный день"></div>
+<div class="caption"><h2>Маленькие вещи, которые много значат</h2>
+<p>Первые открытки от тебя, любимая футболка с твоими губами… И тот день, который стал нашей последней встречей в 2025 году.</p>
+<p class="lead">Такие мелочи я храню не из-за самих вещей. Я храню их из-за тебя. ❤️</p></div></div>
+</section>
+
+<section class="chapter">
+<div class="card fade"><div class="num">05 / 09</div><div class="photo-wrap"><img src="photos/05-new-year.jpeg" alt="Новый 2026 год"></div>
+<div class="caption"><h2>Новый 2026 год</h2>
+<p>Когда мы собрались и весело проводили время. День, когда ты впервые вошла в мой дом, и та самая неловкая поездка с моей тётей 😅😂</p>
+<p class="lead">Так скучаю по этому дню. Он навсегда останется одним из моих любимых. ❤️</p></div></div>
+</section>
+
+<section class="chapter holly">
+<div class="card fade"><div class="num">06 / 09</div><div class="photo-wrap"><img src="photos/06-holly-fest.jpeg" alt="Холли Фест"></div>
+<div class="caption"><h2>Холли Фест 🌈</h2>
+<p>Этот день — столько смеха, красок и какой-то детской радости. Помню, как мы бегали и кидались красками, забывая обо всём вокруг 😂</p>
+<p>А больше всего мне запомнилась твоя улыбка. Такая настоящая, счастливая…</p>
+<p class="lead">Были же времена, а, жаным? 😂❤️</p>
+<p>Кейде ең бақытты сәттер — ең қарапайым сәттер екен.</p></div></div>
+</section>
+
+<section class="chapter">
+<div class="card fade"><div class="num">07 / 09</div><div class="photo-wrap"><img src="photos/07-bridge.jpeg" alt="Тот вечер на мосту"></div>
+<div class="caption"><h2>Тот вечер на мосту 🌅</h2>
+<p>Помню, как мы с Алемгуль и Анэлей гуляли на мосту. Просто разговаривали, смеялись с какой-то полной фигни 😂</p>
+<p>Особенно то, как мы угарали над Анэлей. Как вспомню — сразу лыбу давлю.</p>
+<p>Мы просто были рядом, никуда не торопились и наслаждались моментом.</p>
+<p class="lead">Себебі бақыт — үлкен нәрселерде емес.<br>Кейде бақыт — осындай қарапайым сәттерде ғана. ❤️</p></div></div>
+</section>
+
+<section class="chapter">
+<div class="card fade"><div class="num">08 / 09</div><div class="moments">
+<img src="photos/08-our-moments-1.jpeg" alt="Наш момент 1">
+<img src="photos/08-our-moments-2.jpeg" alt="Наш момент 2">
+<img src="photos/08-our-moments-3.jpeg" alt="Наш момент 3">
+</div>
+<div class="caption"><h2>Наши моменты 🥰</h2>
+<p>Иногда я смотрю на наши фотографии и понимаю, что самое ценное — даже не какие-то особенные события.</p>
+<p>Вот эти наши обычные моменты: где мы смеёмся с какой-то фигни, дурачимся, строим рожицы, обнимаемся и просто сидим рядом.</p>
+<p>На каждой фотографии мы немного разные. Но есть одна вещь, которая остаётся неизменной — <b>мне хорошо, когда ты рядом.</b></p>
+<p>Я хочу, чтобы таких фотографий у нас становилось только больше. Чтобы спустя много лет мы открывали их и говорили: «Помнишь этот день?.. А помнишь, как мы тогда смеялись?» 🥹❤️</p>
+<p class="lead">Осындай сәттерді мен ешқашан ұмытқым келмейді, жаным.</p></div></div>
+</section>
+
+<section class="chapter">
+<div class="card fade"><div class="num">09 / 09</div><div class="photo-wrap"><img src="photos/09-guitar.jpeg" alt="Я учил тебя играть на гитаре"></div>
+<div class="caption"><h2>Твои успехи 🎸</h2>
+<p>В этот день я снова учил тебя играть на гитаре. Смотрел, как ты стараешься, как у тебя постепенно получается всё лучше и лучше.</p>
+<p>Мне нравилось не только учить тебя — мне нравилось <b>наблюдать за тобой</b>. За тем, как ты развиваешься, как не сдаёшься и идёшь дальше.</p>
+<p>И знаешь, жаным… <b>видеть твои успехи для меня гораздо важнее, чем свои.</b></p>
+<p>Потому что когда у тебя что-то получается — я радуюсь так, будто это получилось у меня.</p>
+<p>Мен сенің әр жетістігіңе шын жүрегіммен қуанамын. ❤️</p>
+<p class="lead">Сенің қолыңнан бәрі келеді. Мен саған сенемін. ❤️</p></div></div>
+</section>
+
+<section>
+<div class="card glass letter fade">
+<div class="kicker">от меня тебе</div><h2>Арука, жаным…</h2>
+<p>Я знаю, что у нас бывало разное. Мы ругались, иногда из-за мелочей копили обиды и делали друг другу больно. И я не хочу делать вид, будто этого не было.</p>
+<p>Я хочу другое. Я хочу не обещать тебе красивыми словами, что всё будет идеально, а показывать это поступками. Хочу учиться слышать тебя, беречь тебя и не позволять старым обидам становиться сильнее того, что между нами есть.</p>
+<p>Я хочу, чтобы у нас было больше моментов, над которыми мы смеёмся, больше встреч, прогулок и поездок, больше спокойствия и меньше причин расстраиваться друг на друга.</p>
+<p>Ботам, я не знаю, каким будет каждый наш следующий день. Но я знаю, с кем хочу его проживать. С тобой.</p>
+<p>Спасибо тебе за все моменты, за поддержку, за смех и за то, что ты есть в моей жизни. И если раньше я где-то не умел показать, насколько ты мне дорога, я хочу это исправлять.</p>
+<p>Я не хочу возвращать всё «как раньше». Я хочу, чтобы дальше было <b>лучше</b>. Чтобы мы учились друг друга понимать, ценить и беречь.</p>
+<div class="signature">Твой ♥</div>
+</div>
+</section>
+
+<section>
+<div class="card fade">
+<div class="kicker">біздің тарихымыз</div>
+<div class="big-love">Это только начало.</div>
+<p class="final">Всё, что ты увидела здесь, — лишь маленькая часть нашей истории.<br><br>
+Я хочу, чтобы впереди у нас было ещё больше фотографий, поездок, смешных историй, долгих разговоров и тихих счастливых вечеров.</p>
+<p class="final"><b>Мен сені жақсы көремін, Арука.</b><br>Сен менің жанымсың, ботам. ❤️</p>
+<div class="heart">♥</div>
+</div>
+</section>
+
+<footer>Сделано с любовью — для Аруки.</footer>
+
+<div class="player">
+<button id="play">▶</button>
+<div class="track"><b>Abzal Uteshov — Bir Oilap Alam</b><small>наша музыка</small>
+<input id="seek" type="range" min="0" max="100" value="0"></div>
+</div>
+<audio id="audio" src="bir_oilap_alam.mp3" preload="metadata"></audio>
+
+<script>
+const audio=document.getElementById('audio'), play=document.getElementById('play'),
+seek=document.getElementById('seek'), startMusic=document.getElementById('startMusic');
+function toggle(){
+ if(audio.paused){audio.play().then(()=>{play.textContent='❚❚';startMusic.textContent='❚❚ Наша песня играет'}).catch(()=>{});}
+ else{audio.pause();play.textContent='▶';startMusic.textContent='▶ Включить нашу песню'}
+}
+play.onclick=toggle; startMusic.onclick=toggle;
+audio.addEventListener('timeupdate',()=>{if(audio.duration)seek.value=audio.currentTime/audio.duration*100});
+seek.oninput=()=>{if(audio.duration)audio.currentTime=seek.value/100*audio.duration};
+audio.addEventListener('ended',()=>{play.textContent='▶';startMusic.textContent='▶ Включить нашу песню'});
+const obs=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)e.target.classList.add('show')}),{threshold:.12});
+document.querySelectorAll('.fade').forEach(x=>obs.observe(x));
+const bar=document.getElementById('progressBar');
+addEventListener('scroll',()=>{const h=document.documentElement.scrollHeight-innerHeight;bar.style.width=(scrollY/h*100)+'%'},{passive:true});
+</script>
+</body>
+</html>
